@@ -98,11 +98,17 @@ a { color: inherit; }
 
 .nav-links a:hover { color: var(--text); }
 
-.theme-toggle {
+.toggles {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.theme-toggle,
+.lang-toggle {
   background: var(--chip-bg);
   border: 1px solid var(--border);
   border-radius: 999px;
-  width: 36px;
   height: 36px;
   cursor: pointer;
   color: var(--text);
@@ -110,6 +116,15 @@ a { color: inherit; }
   align-items: center;
   justify-content: center;
   font-size: 0.95rem;
+}
+
+.theme-toggle { width: 36px; }
+
+.lang-toggle {
+  width: 40px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 .icon-moon { display: none; }
