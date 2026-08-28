@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cristian Triana — Portafolio</title>
+  <meta name="description" content="Portafolio de Cristian Triana, desarrollador Full Stack enfocado en Back-End." />
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/39069895?v=4" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#top" class="brand">Cristian Triana</a>
+      <nav class="nav-links">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+        <span class="icon-sun">☀</span><span class="icon-moon">☾</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <img class="avatar" src="https://avatars.githubusercontent.com/u/39069895?v=4" alt="Cristian Triana" width="120" height="120" />
+      <h1>Cristian Triana</h1>
+      <p class="role">Desarrollador Full Stack · Enfoque Back-End</p>
+      <p class="bio">Construyo proyectos modulares y escalables, pensados para facilitar el trabajo en equipo. Bogotá, Colombia.</p>
+      <div class="hero-links">
+        <a class="btn btn-primary" href="https://github.com/CristianCTriana" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-ghost" href="mailto:cristianctr97@gmail.com">Contactar</a>
+      </div>
+    </section>
+
+    <section class="featured" id="proyectos">
+      <h2 class="section-title">Proyectos destacados</h2>
+      <div class="featured-grid">
+        <article class="featured-card">
+          <div class="featured-tag">En producción</div>
+          <h3>Pizza360</h3>
+          <p class="stack">TypeScript · Next.js</p>
+          <p class="desc">Aplicación web construida con Next.js. Desplegada y funcionando en vivo.</p>
+          <div class="card-links">
+            <a class="btn btn-primary btn-sm" href="https://pizza360.vercel.app" target="_blank" rel="noopener">Ver demo ↗</a>
+            <a class="btn btn-outline btn-sm" href="https://github.com/CristianCTriana/Pizza360" target="_blank" rel="noopener">Código</a>
+          </div>
+        </article>
+        <article class="featured-card">
+          <div class="featured-tag">En producción</div>
+          <h3>PI-Videogames</h3>
+          <p class="stack">JavaScript · React · Redux · Node · Sequelize</p>
+          <p class="desc">Proyecto individual (SoyHenry): catálogo de videojuegos con filtros, CRUD y backend propio.</p>
+          <div class="card-links">
+            <a class="btn btn-primary btn-sm" href="https://pi-videogames-pink.vercel.app" target="_blank" rel="noopener">Ver demo ↗</a>
+            <a class="btn btn-outline btn-sm" href="https://github.com/CristianCTriana/PI-VIDEOGAMES" target="_blank" rel="noopener">Código</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="all-projects">
+      <div class="filters" role="tablist" aria-label="Filtrar proyectos">
+        <button class="filter-chip is-active" data-filter="all">Todos</button>
+        <button class="filter-chip" data-filter="demo">Con demo</button>
+        <button class="filter-chip" data-filter="desktop">Escritorio</button>
+        <button class="filter-chip" data-filter="code">Solo código</button>
+        <button class="filter-chip" data-filter="reference">Referencia</button>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card" data-type="demo">
+          <h3>Multi-PI</h3>
+          <p class="stack">Next.js</p>
+          <p class="desc">Proyecto Next.js desplegado en Vercel.</p>
+          <div class="card-links">
+            <a href="https://multi-pi-delta.vercel.app" target="_blank" rel="noopener">Demo ↗</a>
+            <a href="https://github.com/CristianCTriana/multi-pi" target="_blank" rel="noopener">Código</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-type="desktop">
+          <h3>Dofus Mount Manager</h3>
+          <p class="stack">C# · WPF · .NET 8</p>
+          <p class="desc">Aplicación de escritorio para gestionar la crianza de monturas en Dofus: hasta 6 cercados en paralelo, cálculo en tiempo real de madurez, nivel y serenidad. Proyecto más reciente y activo.</p>
+          <div class="card-links">
+            <a href="https://github.com/CristianCTriana/DofusMountManager/releases/latest" target="_blank" rel="noopener">Descargar ↗</a>
+            <a href="https://github.com/CristianCTriana/DofusMountManager" target="_blank" rel="noopener">Código</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-type="code">
+          <h3>PI-Food</h3>
+          <p class="stack">React · Redux · Node · Sequelize</p>
+          <p class="desc">Proyecto individual (SoyHenry): aplicación de recetas con backend propio y base de datos relacional.</p>
+          <div class="card-links">
+            <a href="https://github.com/CristianCTriana/Pi-Food" target="_blank" rel="noopener">Código</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-type="code">
+          <h3>PI-Pokemon</h3>
+          <p class="stack">React · Redux · Node · Sequelize</p>
+          <p class="desc">Proyecto individual (SoyHenry): explorador de Pokémon con filtros, creación de entradas propias y backend a medida.</p>
+          <div class="card-links">
+            <a href="https://github.com/CristianCTriana/PI-Pokemon" target="_blank" rel="noopener">Código</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-type="code">
+          <h3>Proyecto Angular ZC</h3>
+          <p class="stack">Angular · TypeScript</p>
+          <p class="desc">Aplicación construida con Angular.</p>
+          <div class="card-links">
+            <a href="https://github.com/CristianCTriana/ProyectoAngularZC" target="_blank" rel="noopener">Código</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-type="code">
+          <h3>Clínica Konrad</h3>
+          <p class="stack">Ruby on Rails</p>
+          <p class="desc">Aplicación backend construida en Ruby on Rails.</p>
+          <div class="card-links">
+            <a href="https://github.com/CristianCTriana/ClinicaKonrad" target="_blank" rel="noopener">Código</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-type="reference">
+          <h3>Griky</h3>
+          <p class="stack">Contenido / Documentación</p>
+          <p class="desc">Repositorio de referencia con material y estructura de cursos.</p>
+          <div class="card-links">
+            <a href="https://github.com/CristianCTriana/Griky" target="_blank" rel="noopener">Ver repositorio</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="sobre-mi">
+      <h2 class="section-title">Sobre mí</h2>
+      <p>Desarrollador Full Stack enfocado en Back-End, con foco en crear proyectos modulares y escalables que faciliten el trabajo en equipo. Con experiencia en JavaScript/TypeScript (Node, React, Next.js, Angular), C# (.NET), Ruby on Rails y diseño de APIs con bases de datos relacionales.</p>
+      <div class="tags">
+        <span>JavaScript</span><span>TypeScript</span><span>React</span><span>Next.js</span>
+        <span>Angular</span><span>Node.js</span><span>Sequelize</span><span>C# / .NET</span>
+        <span>Ruby on Rails</span><span>Redux</span>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <p>¿Trabajamos juntos? <a href="mailto:cristianctr97@gmail.com">cristianctr97@gmail.com</a></p>
+    <p class="footer-links">
+      <a href="https://github.com/CristianCTriana" target="_blank" rel="noopener">GitHub</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
